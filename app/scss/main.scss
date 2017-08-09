@@ -187,11 +187,13 @@ nav {
             border: 3px solid #fff;
             border-radius: 7px;
             background-color: rgba(255, 255, 255, 0.0);
-            font-family: "BebasNeue", sans-serif;
-            font-size: 27px;
-            text-transform: uppercase;
-            text-align: center;
-            color: #fff;
+            p {
+                align-self: center;
+                font-family: "BebasNeue", sans-serif;
+                font-size: 27px;
+                text-transform: uppercase;
+                color: #fff;
+            }
         }
     }
     .dots {
@@ -348,7 +350,6 @@ footer {
                         text-decoration: underline;
                     }
                 }
-                
             }
             .brands-container {
                 padding-left: 5px;
@@ -356,8 +357,7 @@ footer {
         }
     }
     .copyrighting {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        height: 46px;
         background-color: #2DA89B;
         font-family: "Opensans", sans-serif;
         font-size: 15px;

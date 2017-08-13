@@ -325,9 +325,10 @@ nav {
 footer {
     background-color: #3CC3B5;
     color: #fff;
-    .footer-container {
-        width: 880px;
-        margin: 0 auto;
+    .brands-container {
+        width: 100%;
+        max-width: 880px; 
+        flex-wrap: wrap; 
         ul {
             padding: 0;
             list-style: none;

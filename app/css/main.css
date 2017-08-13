@@ -743,28 +743,31 @@ nav {
 footer {
   background-color: #3CC3B5;
   color: #fff; }
-  footer .footer-container {
-    width: 880px;
-    margin: 0 auto; }
-    footer .footer-container ul {
+  footer .brands-container {
+    width: 100%;
+    max-width: 880px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    footer .brands-container ul {
       padding: 0;
       list-style: none; }
-      footer .footer-container ul li {
+      footer .brands-container ul li {
         padding-left: 3px;
         font-family: "Opensans", sans-serif;
         font-size: 15px; }
-        footer .footer-container ul li:first-child {
+        footer .brands-container ul li:first-child {
           padding-left: 0px;
           font-family: "BebasNeue";
           font-size: 27px;
           font-weight: bold;
           text-transform: uppercase; }
-        footer .footer-container ul li a {
+        footer .brands-container ul li a {
           color: #fff;
           text-decoration: none; }
-          footer .footer-container ul li a:hover {
+          footer .brands-container ul li a:hover {
             text-decoration: underline; }
-      footer .footer-container ul .brands-container {
+      footer .brands-container ul .brands-container {
         padding-left: 5px; }
   footer .copyrighting {
     height: 46px;
@@ -789,7 +792,17 @@ footer {
             flex-wrap: wrap; }
   .banner {
     padding-left: 20px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  .brands-container {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .featured {
+    padding-left: 5%;
+    padding-right: 5%; }
+    .featured .product {
+      margin-right: 2%;
+      margin-left: 2%; } }
 
 @media only screen and (max-width: 768px) {
   .banner {
@@ -807,4 +820,7 @@ footer {
     .banner-content .banner-text-container, .banner-content img {
       margin: 0 auto; }
       .banner-content .banner-text-container.banner-text-container, .banner-content img.banner-text-container {
-        width: 90%; } }
+        width: 90%; }
+  .brands-container ul {
+    margin-left: 9%;
+    margin-right: 9%; } }

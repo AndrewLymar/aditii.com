@@ -681,16 +681,13 @@ nav {
   background-color: #3DC4B6; }
 
 .divider {
-  width: 900px;
   height: 68px;
-  margin: 0 auto;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
   .divider h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 175px;
     font-family: "BebasNeue", sans-serif;
     font-size: 27px;
     font-weight: bold;
@@ -781,7 +778,11 @@ footer {
     padding-right: 15px; }
   nav ul {
     padding-left: 25px;
-    padding-right: 25px; } }
+    padding-right: 25px; }
+  .new-product:nth-child(3) {
+    display: none; }
+  .divider h2 {
+    padding: 0; } }
 
 @media only screen and (max-width: 992px) {
   .top-content .grid-cols .search {
@@ -797,12 +798,27 @@ footer {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+  .new-products {
+    padding-left: 5%;
+    padding-right: 5%; }
+    .new-products .new-product {
+      border-right: none; }
+  .new-product:nth-child(3),
+  .new-product:nth-child(4) {
+    display: none; }
   .featured {
     padding-left: 5%;
     padding-right: 5%; }
     .featured .product {
       margin-right: 2%;
-      margin-left: 2%; } }
+      margin-left: 2%; }
+  .divider {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .divider h2 {
+      padding: 0; } }
 
 @media only screen and (max-width: 768px) {
   .banner {
@@ -816,11 +832,23 @@ footer {
             flex-direction: column; }
     .banner-content .banner-img-container {
       width: 95%;
-      margin: 0 auto; }
-    .banner-content .banner-text-container, .banner-content img {
-      margin: 0 auto; }
-      .banner-content .banner-text-container.banner-text-container, .banner-content img.banner-text-container {
-        width: 90%; }
+      margin: 0 auto;
+      margin-bottom: 25px; }
+    .banner-content .shop-button {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
   .brands-container ul {
     margin-left: 9%;
-    margin-right: 9%; } }
+    margin-right: 9%; }
+  .new-products .new-product {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px; }
+    .new-products .new-product .img-container {
+      margin: 0; } }

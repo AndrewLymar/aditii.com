@@ -78,6 +78,11 @@ h6 {
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: #188D76;
+    }
+    
 }
 
 .top-content {
@@ -88,6 +93,7 @@ h6 {
         font-family: "Lobster", serif;
         font-size: 50px;
         color: #3CC3B5;
+        cursor: pointer;
     }
     .search {
         display: flex;
@@ -104,6 +110,7 @@ h6 {
     }
     .cart {
         margin-top: -7px;
+        cursor: pointer;
         img {
             width: 41px;
             height: 37px;
@@ -122,6 +129,12 @@ h6 {
 
 nav {
     background-color: #4CCFC1;
+    .mobile-menu-icon {
+        display: none;
+    }
+    .mobile-search {
+        display: none;
+    }
     ul {
         max-width: 990px;
         margin: 0 auto;
@@ -129,23 +142,19 @@ nav {
         justify-content: space-around;
         flex-wrap: wrap;
         li {
+            color: #fff;
             margin-right: 13px;
             font-family: "BebasNeue", sans-serif;
             font-size: 21px;
             list-style: none;
-            &:after {
-                margin-left: 13px;
-                content: "|";
-                color: #fff;
-            }
-            &:last-child:after {
-                content: "";
-            }
             a {
                 color: #fff;
                 text-decoration: none;
                 letter-spacing: 0.5px;
                 white-space: nowrap;
+                &:hover {
+                    color: #f0f0f0;
+                }
             }
         }
     }
@@ -195,6 +204,7 @@ nav {
             font-weight: bold;
             text-transform: uppercase;
             color: #fff;
+            cursor: pointer;
         }
     }
     .dots {
@@ -268,8 +278,8 @@ nav {
 }
 
 .featured {
-    max-width: 950px;
     flex-wrap: wrap;
+    max-width: 950px;
     margin-bottom: 50px;
     .product {
         width: 250px;

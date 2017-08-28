@@ -61,8 +61,7 @@ h6 {
     align-items: flex-end
 }
 
-.main-wrapper {
-}
+.main-wrapper {}
 
 .button {
     display: flex;
@@ -82,7 +81,15 @@ h6 {
     &:hover {
         color: #188D76;
     }
-    
+}
+
+.search-field {
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
 }
 
 .top-content {
@@ -98,14 +105,8 @@ h6 {
     .search {
         display: flex;
         width: 436px;
-        input {
-            width: 100%;
+        input.search-field {
             height: 33px;
-            border: 1px solid #E1E1E1;
-            border-radius: 2px;
-            background-image: url("../img/search.png");
-            background-repeat: no-repeat;
-            background-position: 98% center;
         }
     }
     .cart {
@@ -334,8 +335,8 @@ footer {
     color: #fff;
     .brands-container {
         width: 100%;
-        max-width: 880px; 
-        flex-wrap: wrap; 
+        max-width: 880px;
+        flex-wrap: wrap;
         ul {
             padding: 0;
             list-style: none;

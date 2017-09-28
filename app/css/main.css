@@ -812,9 +812,6 @@ footer {
     padding-right: 5%; }
     .new-products .new-product {
       border-right: none; }
-  .new-product:nth-child(3),
-  .new-product:nth-child(4) {
-    display: none; }
   .featured {
     padding-left: 5%;
     padding-right: 5%; }
@@ -938,5 +935,14 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .new-products .new-product {
+    display: none;
     padding-left: 0px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+    .new-products .new-product .img-container {
+      max-width: 150px;
+      height: auto; }
+    .new-products .new-product:nth-child(2) {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }

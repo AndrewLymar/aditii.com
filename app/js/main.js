@@ -2,9 +2,9 @@ $(function () {
     var menuIsOpened = false;
 
     $(window).on("resize", function () {
-        if (!menuIsOpened && $(window).width() > "768") {
+        if (!menuIsOpened && $(document).width() > "768") {
             showMenu();
-        } else if (menuIsOpened && $(window).width() < "768") {
+        } else if (menuIsOpened && $(document).width() < "768") {
             hideMenu();
         }
     });
@@ -18,7 +18,7 @@ $(function () {
     });
     
     $("nav a").on("click", function () {
-        if ($(window).width() <= "768") {
+        if ($(document).width() <= "768") {
             hideMenu();
         }
     });
